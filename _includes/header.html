@@ -1,0 +1,14 @@
+<nav>
+  <div class="container-fluid position-fixed position-fixed__top position-fixed__top--z-index-1000 position-fixed__top--full-width">
+    <div class="row">
+      <nav class="nav">
+      <span class="nav__text nav__text--color">MENU</span>
+        <div class="nav--elements">
+          <a class="{% if page.url == '/' %}current-url{% endif %}" href="{{site.baseurl}}/">Home</a>
+          <a class="{% if page.url contains 'blog' %}current-url{% endif %}" href="{{site.baseurl}}/blog/">Blog</a>
+          <a class="{% if page.url == '/contact/' %}current-url{% endif %}" href="{{site.baseurl}}/contact/">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</nav>
