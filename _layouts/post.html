@@ -2,22 +2,23 @@
 layout: default
 ---
 <div class="row padding__top--75px">
-  <div class="col-lg-8 col-lg-offset-2 col-xs-12">
+  <div class="col-lg-12">
     <article>
-      <header class="blog_header">
-        <h1 class="blog_header" itemprop="name headline">{{ page.title }}</h1>
-        <p>
-          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-            {{ page.date | date: "%b %-d, %Y" }}
-          </time>
-          {% if page.author %}
-            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">{{ page.author }}
-              </span>
-            </span>
-          {% endif %}
-        </p>
-      </header>
+        <header class="blog_header">
+            <h1 class="blog_header" itemprop="name headline">{{ page.title }}</h1>
+            <p>
+                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                    <i class="fa fa-calendar"></i> {{ page.date | date: "%b %-d, %Y" }}
+                </time> //
+                {% if page.author %}
+                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span itemprop="name">
+                        <i class="fa fa-user"></i> {{ page.author }}
+                    </span>
+                </span>
+                {% endif %}
+            </p>
+        </header>
       <div class="blog__paragraph" itemprop="articleBody">
         {{ content }}
       </div>

@@ -1,0 +1,47 @@
+﻿.flexbox {
+    display: flex;
+
+    &__100vh {
+        min-height: 100vh;
+    }
+
+    &__85vh {
+        height: 85vh;
+    }
+
+    &__75vh {
+        height: 75vh;
+    }
+
+    &__25vh {
+        height: 25vh;
+    }
+
+    &__15vh {
+        height: 15vh;
+    }
+
+    &--center {
+        align-items: center;
+    }
+
+    &--end {
+        align-items: flex-end;
+    }
+
+    &--direction-column {
+        flex-direction: column;
+    }
+}
+
+.fontpage {
+    &__step1 {
+        &--height {
+            height: auto;
+        }
+    }
+}
+
+.justify-content {
+    justify-content: center;
+}

@@ -1,0 +1,23 @@
+﻿.border-solid {
+    border-style: solid;
+
+    &__primary {
+        border-color: $brand-primary;
+    }
+
+    &__dark-gray {
+        border-color: $gray-dark;
+    }
+
+    &--size-xs {
+        border-width: 1px;
+    }
+
+    &--size-sm {
+        border-width: 2px;
+    }
+
+    &--size-md {
+        border-width: 4px;
+    }
+}

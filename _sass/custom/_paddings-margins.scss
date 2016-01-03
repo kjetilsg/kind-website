@@ -1,0 +1,57 @@
+﻿/* PADDINGS */
+.padding {
+    &__all {
+        &--10px {
+            padding: 10px;
+        }
+    }
+
+    &__top {
+        &--50px {
+            padding-top: 50px;
+        }
+
+        &--75px {
+            padding-top: 75px;
+        }
+
+        &--100px {
+            padding-top: 100px;
+        }
+    }
+
+    &__bottom {
+        &--50px {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+/* MARGINS */
+.margin {
+    &__all {
+        &--10px {
+            margin: 10px;
+        }
+    }
+
+    &__top {
+        &--50px {
+            margin-top: 50px;
+        }
+
+        &--75px {
+            margin-top: 75px;
+        }
+
+        &--100px {
+            margin-top: 100px;
+        }
+    }
+
+    &__bottom {
+        &--50px {
+            margin-bottom: 50px;
+        }
+    }
+}
