@@ -21,4 +21,5 @@ markdown: kramdown
 exclude: [bower_components]
 
 sass:
+  sass_dir: _sass
   style: compressed

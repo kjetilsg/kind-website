@@ -1,8 +1,48 @@
-<footer class="row footer">
-  <div class="col-xs-12 text-center">
-    {% include svgs/kind-logo.html %}
-    <p class="footer__text footer__text--color">{{ site.title }}</p>
-    <p class="footer__text"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-    <p class="footer__text footer__text--color">{{ site.description }}</p>
-  </div>
-</footer>
+<div class="container-fluid">
+    <footer class="row footer">
+        <div class="col-xs-12 text-center">
+            {% include svgs/kind-logo.html %}
+            <p class="footer__text footer__text--color">{{ site.title }}</p>
+            <p class="footer__text"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+            <p class="footer__text footer__text--color">{{ site.description }}</p>
+        </div>
+    </footer>
+</div>
+
+<script src="{{ site.baseurl }}/scripts/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/scripts/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}/scripts/scrollto.js"></script>
+<script src="{{ site.baseurl }}/scripts/swiper.jquery.min.js"></script>
+<script src="{{ site.baseurl }}/scripts/echo.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+</script>
+
+<!-- Echo.js Lazy load images -->
+<script>
+  echo.init({
+    offset: 100,
+    throttle: 250,
+    unload: false,
+    callback: function (element, op) {
+      console.log(element, 'has been', op + 'ed')
+    },
+  });
+
+  echo.init({
+      callback: function (element, op) {
+          if (op === 'load') {
+              element.classList.add('fade-in');
+          } else {
+              element.classList.remove('fade-in');
+          }
+      }
+  });
+
+  // echo.render(); is also available for non-scroll callbacks
+</script>
