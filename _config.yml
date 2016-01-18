@@ -8,7 +8,7 @@
 # Site settings
 title: KIND
 email: hey@whatkind.no
-description: I will help your company getting rid of bad design prosess.
+description: I will help your company getting rid of bad design processes
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: blog/:year/:month/:title/
 url: "http://www.whatkind.no" # the base hostname & protocol for your site
