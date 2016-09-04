@@ -1,24 +1,12 @@
 ﻿.flexbox {
     display: flex;
 
-    &__100vh {
-        min-height: 100vh;
+    &__wrap {
+        flex-wrap: wrap;
     }
 
-    &__85vh {
-        height: 85vh;
-    }
-
-    &__75vh {
-        height: 75vh;
-    }
-
-    &__25vh {
-        height: 25vh;
-    }
-
-    &__15vh {
-        height: 15vh;
+    &--align-stretch {
+        align-items: stretch;
     }
 
     &--center {
@@ -32,6 +20,11 @@
     &--direction-column {
         flex-direction: column;
     }
+
+    &--justify-content {
+        justify-content: center;
+    }
+
 }
 
 .fontpage {
@@ -40,8 +33,4 @@
             height: auto;
         }
     }
-}
-
-.justify-content {
-    justify-content: center;
 }

@@ -2,11 +2,11 @@
     border-style: solid;
 
     &__primary {
-        border-color: $brand-primary;
+        border-color: $primary-color;
     }
 
     &__dark-gray {
-        border-color: $gray-dark;
+        border-color: $base-color;
     }
 
     &--size-xs {

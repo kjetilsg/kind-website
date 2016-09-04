@@ -1,3 +1,3 @@
 #KIND design webpage
 
-A webpage createt using Jekyll
+A webpage created using Jekyll

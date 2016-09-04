@@ -1,0 +1,21 @@
+/* path to glyphicons */
+$icon-font-path: "/fonts/";
+
+@import "custom/colors";
+@import "custom/screen-size";
+@import "custom/main";
+@import "custom/nav";
+@import "custom/paddings-margins";
+@import "custom/flexbox";
+@import "custom/borders";
+@import "custom/fade";
+@import "custom/containers";
+@import "custom/labels";
+@import "custom/text";
+@import "custom/img";
+
+// import Font Awesome SASS
+@import "../bower_components/font-awesome/scss/font-awesome.scss";
+
+// import Normalize
+@import "../bower_components/normalize-scss/sass/normalize";

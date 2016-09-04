@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  NRK design consept
-meta: NRK needs a new frontpage. This is my suggestion.
+meta: NRK needs a facelift. This is my suggestion.
 author: Kjetil G.
 date: 2016-01-01 22:31:51 +0100
-categories: web
+categories: consept
 img: main.png
 ---
 

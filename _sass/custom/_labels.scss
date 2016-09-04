@@ -1,0 +1,17 @@
+.label {
+    font-size: 12px;
+    padding: 0 5px;
+    color: #fff;
+    border-radius: 2px;
+    font-family: $main-font;
+    margin-left: 10px;
+    &__product {
+        background-color: #178ecb;
+    }
+    &__web {
+        background-color: #17cb4e;
+    }
+    &__consept {
+        background-color: $base-color;
+    }
+}

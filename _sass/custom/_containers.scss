@@ -1,0 +1,57 @@
+.container-box {
+    &__md {
+        max-width: 700px;
+        padding: 20px;
+        margin: auto;
+    }
+    &__full {
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+    }
+}
+
+.child {
+    &__blogpost {
+        background-color: #fff;
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        z-index: 2;
+        &--textcontainer {
+            padding: 20px;
+        }
+    }
+    &__full {
+        padding: 20px;
+        width:100%;
+        z-index: 2;
+    }
+    &__sm {
+        width: 250px;
+    }
+}
+
+.height{
+    &__100vh {
+        min-height: 100vh;
+    }
+
+    &__85vh {
+        height: 85vh;
+    }
+
+    &__75vh {
+        height: 75vh;
+    }
+
+    &__25vh {
+        height: 25vh;
+    }
+
+    &__15vh {
+        height: 15vh;
+    }
+
+}

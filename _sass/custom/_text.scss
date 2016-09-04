@@ -1,0 +1,62 @@
+.fontfamily {
+    &__serfi {
+        font-family: $serif-font;
+    }
+}
+
+.pageheader {
+    font-size: 90px;
+    &__blog {
+        background-color: $primary-color;
+        padding: 10px;
+        color: #fff;
+        font-weight: 100;
+        margin-bottom: 30px;
+        text-align: right;  position: relative;
+  z-index: 1;
+
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+  }
+
+  &:after {
+    bottom: 0;
+    transform: skewY(-3.75deg);
+    transform-origin: 100%;
+  }
+}
+&__contact {
+    background-color: $base-light-30;
+    padding: 10px;
+    color: #fff;
+    font-weight: 100;
+    text-align: right;  position: relative;
+z-index: -2;
+
+&:after {
+background: inherit;
+content: '';
+display: block;
+height: 100%;
+left: 0;
+position: absolute;
+right: 0;
+z-index: -1;
+-webkit-backface-visibility: hidden; // for Chrome Windows
+}
+
+&:after {
+bottom: 0;
+transform: skewY(-3.75deg);
+transform-origin: 100%;
+}
+}
+}
